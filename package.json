@@ -1,0 +1,52 @@
+{
+  "name": "@macfja/svelte-scroll-video",
+  "svelte": "src/index.js",
+  "module": "dist/index.mjs",
+  "description": "A component to play a video by scrolling the page",
+  "readme": "README.md",
+  "main": "dist/index.js",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "lint": "prettier --plugin-search-dir=. --check .",
+    "format": "prettier --plugin-search-dir=. --write .",
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/macfja/svelte-scroll-video.git"
+  },
+  "bugs": {
+    "url": "https://github.com/macfja/svelte-scroll-video/issues"
+  },
+  "homepage": "https://github.com/macfja/svelte-scroll-video#readme",
+  "author": "MacFJA",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "prettier": "^2.7.1",
+    "prettier-plugin-svelte": "^2.8.0",
+    "rollup": "^2.79.1",
+    "rollup-plugin-svelte": "^7.1.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "svelte": "^3.0.0"
+  },
+  "keywords": [
+    "svelte",
+    "video",
+    "scroll"
+  ],
+  "files": [
+    "src",
+    "dist",
+    "LICENSE.md",
+    "README.md"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  }
+}

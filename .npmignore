@@ -1,0 +1,8 @@
+/docs/
+/node_modules/
+/*ignore
+/.prettier*
+/CHANGELOG.md
+/CONTRIBUTING.md
+/*config.js
+/*-lock.*
